@@ -1,0 +1,32 @@
+﻿<ContentPage
+    x:Class="LoginApp.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Login">
+
+    <VerticalStackLayout Padding="30" Spacing="20">
+
+        <!--  Campo Usuário  -->
+        <Entry
+            x:Name="txtUsuario"
+            Keyboard="Default"
+            Placeholder="Usuário" />
+
+        <!--  Campo Senha  -->
+        <Entry
+            x:Name="txtSenha"
+            IsPassword="True"
+            Placeholder="Senha" />
+
+        <!--  Botão Entrar  -->
+        <Button Clicked="OnEntrarClicked" Text="Entrar" />
+
+        <!--  Mensagem de feedback  -->
+        <Label
+            x:Name="lblMensagem"
+            HorizontalOptions="Center"
+            Text=""
+            TextColor="Red" />
+
+    </VerticalStackLayout>
+</ContentPage>
